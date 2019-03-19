@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WorkflowManager.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:WorkflowManager.Fakes.ShimEnums">
+            <summary>Shim type of WorkflowManager.Enums</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimEnums.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimEnums.#ctor(WorkflowManager.Enums)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimEnums.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimEnums.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimEnums.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimEnums.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimEnums.Constructor">
+            <summary>Sets the shim of Enums.Enums()</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimExecutionSequence">
+            <summary>Shim type of WorkflowManager.ExecutionSequence</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimExecutionSequence.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimExecutionSequence.#ctor(WorkflowManager.ExecutionSequence)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimExecutionSequence.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.AllInstances.CurrentTextGet">
+            <summary>Sets the shim of ExecutionSequence.get_CurrentText()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.AllInstances.CurrentTextSetString">
+            <summary>Sets the shim of ExecutionSequence.set_CurrentText(String value)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.AllInstances.NameGet">
+            <summary>Sets the shim of ExecutionSequence.get_Name()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.AllInstances.TasksGet">
+            <summary>Sets the shim of ExecutionSequence.get_Tasks()</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimExecutionSequence.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimExecutionSequence.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.ConstructorListOfWorkflowTaskString">
+            <summary>Sets the shim of ExecutionSequence.ExecutionSequence(List`1&lt;WorkflowTask&gt; tasks, String name)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.CurrentTextGet">
+            <summary>Sets the shim of ExecutionSequence.get_CurrentText()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.CurrentTextSetString">
+            <summary>Sets the shim of ExecutionSequence.set_CurrentText(String value)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.NameGet">
+            <summary>Sets the shim of ExecutionSequence.get_Name()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimExecutionSequence.TasksGet">
+            <summary>Sets the shim of ExecutionSequence.get_Tasks()</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimFileManager">
+            <summary>Shim type of WorkflowManager.FileManager</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimFileManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimFileManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimFileManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimFileManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimFileManager.GrepStringString">
+            <summary>Sets the shim of FileManager.Grep(String inputText, String word)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimFileManager.ReadFileString">
+            <summary>Sets the shim of FileManager.ReadFile(String filePath)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimFileManager.ReplaceStringStringString">
+            <summary>Sets the shim of FileManager.Replace(String inputText, String toReplace, String newWord)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimFileManager.SortString">
+            <summary>Sets the shim of FileManager.Sort(String inputText)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimFileManager.WriteFileStringString">
+            <summary>Sets the shim of FileManager.WriteFile(String input, String fileName)</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimWorkflow">
+            <summary>Shim type of WorkflowManager.Workflow</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflow.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflow.#ctor(WorkflowManager.Workflow)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimWorkflow.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflow.AllInstances.NameGet">
+            <summary>Sets the shim of Workflow.get_Name()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflow.AllInstances.SequencesGet">
+            <summary>Sets the shim of Workflow.get_Sequences()</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflow.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflow.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflow.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflow.ConstructorStringListOfExecutionSequence">
+            <summary>Sets the shim of Workflow.Workflow(String name, List`1&lt;ExecutionSequence&gt; sequences)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflow.NameGet">
+            <summary>Sets the shim of Workflow.get_Name()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflow.SequencesGet">
+            <summary>Sets the shim of Workflow.get_Sequences()</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimWorkflowHandler">
+            <summary>Shim type of WorkflowManager.WorkflowHandler</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowHandler.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowHandler.#ctor(WorkflowManager.WorkflowHandler)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimWorkflowHandler.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.AllInstances.ExecuteWorkflow">
+            <summary>Sets the shim of WorkflowHandler.Execute(Workflow workflow)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.AllInstances.executeSequencesExecutionSequence">
+            <summary>Sets the shim of WorkflowHandler.executeSequences(ExecutionSequence sequence)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.AllInstances.flush">
+            <summary>Sets the shim of WorkflowHandler.flush()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.AllInstances.purgeDirectoryString">
+            <summary>Sets the shim of WorkflowHandler.purgeDirectory(String folderPath)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.AllInstances.setUpOutputDirectory">
+            <summary>Sets the shim of WorkflowHandler.setUpOutputDirectory()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.AllInstances.synchExecutionSequence">
+            <summary>Sets the shim of WorkflowHandler.synch(ExecutionSequence sequence)</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowHandler.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowHandler.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.Constructor">
+            <summary>Sets the shim of WorkflowHandler.WorkflowHandler()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.ExecuteWorkflow">
+            <summary>Sets the shim of WorkflowHandler.Execute(Workflow workflow)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.executeSequencesExecutionSequence">
+            <summary>Sets the shim of WorkflowHandler.executeSequences(ExecutionSequence sequence)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.flush">
+            <summary>Sets the shim of WorkflowHandler.flush()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.purgeDirectoryString">
+            <summary>Sets the shim of WorkflowHandler.purgeDirectory(String folderPath)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.setUpOutputDirectory">
+            <summary>Sets the shim of WorkflowHandler.setUpOutputDirectory()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowHandler.synchExecutionSequence">
+            <summary>Sets the shim of WorkflowHandler.synch(ExecutionSequence sequence)</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimWorkflowParser">
+            <summary>Shim type of WorkflowManager.WorkflowParser</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowParser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowParser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowParser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowParser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowParser.ParseInputString">
+            <summary>Sets the shim of WorkflowParser.ParseInput(String input)</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimWorkflowTask">
+            <summary>Shim type of WorkflowManager.WorkflowTask</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowTask.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowTask.#ctor(WorkflowManager.WorkflowTask)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.ShimWorkflowTask.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.AllInstances.IdGet">
+            <summary>Sets the shim of WorkflowTask.get_Id()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.AllInstances.IdSetString">
+            <summary>Sets the shim of WorkflowTask.set_Id(String value)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.AllInstances.NameGet">
+            <summary>Sets the shim of WorkflowTask.get_Name()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.AllInstances.NameSetString">
+            <summary>Sets the shim of WorkflowTask.set_Name(String value)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.AllInstances.ParameterGet">
+            <summary>Sets the shim of WorkflowTask.get_Parameter()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.AllInstances.ParameterSetObject">
+            <summary>Sets the shim of WorkflowTask.set_Parameter(Object value)</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowTask.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.ShimWorkflowTask.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.Constructor">
+            <summary>Sets the shim of WorkflowTask.WorkflowTask()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.IdGet">
+            <summary>Sets the shim of WorkflowTask.get_Id()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.IdSetString">
+            <summary>Sets the shim of WorkflowTask.set_Id(String value)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.NameGet">
+            <summary>Sets the shim of WorkflowTask.get_Name()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.NameSetString">
+            <summary>Sets the shim of WorkflowTask.set_Name(String value)</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.ParameterGet">
+            <summary>Sets the shim of WorkflowTask.get_Parameter()</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.ShimWorkflowTask.ParameterSetObject">
+            <summary>Sets the shim of WorkflowTask.set_Parameter(Object value)</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.StubEnums">
+            <summary>Stub type of WorkflowManager.Enums</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubEnums.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubEnums.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubEnums.InitializeStub">
+            <summary>Initializes a new instance of type StubEnums</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubEnums.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubEnums.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.StubExecutionSequence">
+            <summary>Stub type of WorkflowManager.ExecutionSequence</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubExecutionSequence.#ctor(System.Collections.Generic.List{WorkflowManager.WorkflowTask},System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubExecutionSequence.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubExecutionSequence.InitializeStub">
+            <summary>Initializes a new instance of type StubExecutionSequence</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubExecutionSequence.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubExecutionSequence.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.StubWorkflow">
+            <summary>Stub type of WorkflowManager.Workflow</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubWorkflow.#ctor(System.String,System.Collections.Generic.List{WorkflowManager.ExecutionSequence})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflow.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubWorkflow.InitializeStub">
+            <summary>Initializes a new instance of type StubWorkflow</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflow.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflow.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.StubWorkflowHandler">
+            <summary>Stub type of WorkflowManager.WorkflowHandler</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubWorkflowHandler.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflowHandler.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubWorkflowHandler.InitializeStub">
+            <summary>Initializes a new instance of type StubWorkflowHandler</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflowHandler.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflowHandler.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:WorkflowManager.Fakes.StubWorkflowTask">
+            <summary>Stub type of WorkflowManager.WorkflowTask</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubWorkflowTask.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflowTask.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:WorkflowManager.Fakes.StubWorkflowTask.InitializeStub">
+            <summary>Initializes a new instance of type StubWorkflowTask</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflowTask.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WorkflowManager.Fakes.StubWorkflowTask.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
