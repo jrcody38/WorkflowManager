@@ -9,8 +9,6 @@ namespace WorkflowManager
     {
         public static Workflow ParseInput(string input)
         {
-          
-          
             string[] fileRows = input.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
             var name = fileRows[0].Replace("desc", "").Trim();
             int rowCounter = 1;
