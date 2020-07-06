@@ -1,6 +1,0 @@
-C:\Users\Johnny_Cody\Documents\Visual Studio 2017\Repos\WorkflowManager\WorkflowManager\obj\Debug\WorkflowManager.csproj.CoreCompileInputs.cache
-C:\Users\Johnny_Cody\Documents\Visual Studio 2017\Repos\WorkflowManager\WorkflowManager\bin\Debug\WorkflowManager.exe.config
-C:\Users\Johnny_Cody\Documents\Visual Studio 2017\Repos\WorkflowManager\WorkflowManager\bin\Debug\WorkflowManager.exe
-C:\Users\Johnny_Cody\Documents\Visual Studio 2017\Repos\WorkflowManager\WorkflowManager\bin\Debug\WorkflowManager.pdb
-C:\Users\Johnny_Cody\Documents\Visual Studio 2017\Repos\WorkflowManager\WorkflowManager\obj\Debug\WorkflowManager.exe
-C:\Users\Johnny_Cody\Documents\Visual Studio 2017\Repos\WorkflowManager\WorkflowManager\obj\Debug\WorkflowManager.pdb
