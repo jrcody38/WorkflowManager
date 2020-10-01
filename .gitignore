@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/WorkflowManager/v16
+/WorkflowManager.Test/obj/Debug
+/WorkflowManager.Test/bin/Debug
+/WorkflowManager/bin/Debug
+/WorkflowManager/obj/Debug

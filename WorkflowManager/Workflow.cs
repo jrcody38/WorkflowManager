@@ -6,17 +6,15 @@ namespace WorkflowManager
 {
     public class Workflow
     {
-        List<ExecutionSequence> _sequences;
-        string _name;
+        readonly List<WorkflowExecutionSequence> _sequences;
+        readonly string _name;
 
-
-
-        public Workflow(string name, List<ExecutionSequence> sequences)
+        public Workflow(string name, List<WorkflowExecutionSequence> sequences)
         {
             _name = name;
             _sequences = sequences;
         }
-       public List<ExecutionSequence> Sequences
+       public List<WorkflowExecutionSequence> Sequences
         {
             get { return _sequences; }
         }

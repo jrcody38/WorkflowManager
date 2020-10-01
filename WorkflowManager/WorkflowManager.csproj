@@ -44,15 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums.cs" />
-    <Compile Include="ExecutionSequence.cs" />
     <Compile Include="FileManager.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\Synch.cs" />
     <Compile Include="Workflow.cs" />
     <Compile Include="WorkflowHandler.cs" />
-    <Compile Include="WorkflowParser.cs" />
+    <Compile Include="WorkflowExecutionSequence.cs" />
+    <Compile Include="Tasks\Grep.cs" />
+    <Compile Include="ITaskExecutor.cs" />
+    <Compile Include="Tasks\ReadFile.cs" />
+    <Compile Include="Tasks\Replace.cs" />
+    <Compile Include="Tasks\Sort.cs" />
+    <Compile Include="WorkflowState.cs" />
     <Compile Include="WorkflowTask.cs" />
+    <Compile Include="Tasks\WriteFile.cs" />
+    <Compile Include="WorkflowParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

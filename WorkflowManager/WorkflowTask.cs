@@ -1,30 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace WorkflowManager
 {
-   public class WorkflowTask
+    public class WorkflowTask
     {
-      
-        public string Name
+        readonly string _id;
+        readonly List<string> _parameters;
+        readonly ITaskExecutor _executor;
+
+
+        public WorkflowTask(string id, List<string> parameters, ITaskExecutor executor)
         {
-            get;
-            set;
+            _id = id;
+            _parameters = parameters;
+            _executor = executor;
         }
 
-        public object Parameter
+        public List<string> Parameters
         {
-            get;
-            set;
+            get { return _parameters; }
         }
 
         public string Id
         {
-            get;
-            set;
+            get { return _id; }
         }
 
+
+        public void Execute(ref WorkflowState state)
+        {
+            _executor.Execute(_parameters, ref state);
+        }
 
     }
 }

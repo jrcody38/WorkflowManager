@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace WorkflowManager
 {
-   public static class WorkflowParser
+    public static class WorkflowParser
     {
         public static Workflow ParseInput(string input)
         {
@@ -19,12 +18,14 @@ namespace WorkflowManager
         static List<WorkflowTask> generateWorkflowTasks(string[] fileRows, ref int rowCounter)
         {
             List<WorkflowTask> workflowTasks = new List<WorkflowTask>();
+          
             string currentRowContent = "";
-            string parameters = "";
+            
 
             while (currentRowContent.ToLower().Trim() != "end")
             {
-                currentRowContent = fileRows[rowCounter];
+              List<string> parameters = new List<string>();
+              currentRowContent = fileRows[rowCounter];
 
                 if (currentRowContent.ToLower().Trim() == "end")
                 {
@@ -33,27 +34,28 @@ namespace WorkflowManager
 
                 string[] splitRow = currentRowContent.Split('=');
                 string[] rowValues = splitRow[1].Split(' ').Where(x => !string.IsNullOrEmpty(x)).ToArray();
-                var task = new WorkflowTask();
-                task.Id = currentRowContent.Split('=')[0].Replace("=", "").Trim();
-                task.Name = rowValues[0].Split(' ')[0].Trim();
+               
+                var id = currentRowContent.Split('=')[0].Replace("=", "").Trim();
+                var name = rowValues[0].Split(' ')[0].Trim();
 
                 for (int x = 1; x < rowValues.Length; x++)
                 {
                     var value = rowValues[x].Trim();
-                    parameters += value + " ";
+                    parameters.Add(value);
+                    
                 }
 
-                task.Parameter = parameters.TrimEnd();
+                var task = new WorkflowTask(id, parameters, getExecutor(name));
                 workflowTasks.Add(task);
-                parameters = "";
+              
                 rowCounter++;
             }
 
             return workflowTasks;
         }
-        static List<ExecutionSequence> generateSequences(List<WorkflowTask> workflowTasks, string[] fileRows, int rowCounter)
+        static List<WorkflowExecutionSequence> generateSequences(List<WorkflowTask> workflowTasks, string[] fileRows, int rowCounter)
         {
-            List<ExecutionSequence> sequences = new List<ExecutionSequence>();
+            List<WorkflowExecutionSequence> sequences = new List<WorkflowExecutionSequence>();
             int sequenceCounter = 1;
 
             for (int x = rowCounter + 1; x < fileRows.Length; x++)
@@ -65,7 +67,7 @@ namespace WorkflowManager
                 {
                     tempTasks.Add(workflowTasks.Where(y => y.Id == id).FirstOrDefault());
                 }
-                sequences.Add(new ExecutionSequence(tempTasks, "Sequence_" + sequenceCounter));
+                sequences.Add(new WorkflowExecutionSequence(tempTasks, "Sequence_" + sequenceCounter));
                 sequenceCounter++;
 
             }
@@ -73,5 +75,12 @@ namespace WorkflowManager
             return sequences;
            
         }
+
+
+        static ITaskExecutor getExecutor(string name)
+         {
+            Type type = Type.GetType("WorkflowManager.Tasks." + name, true, true);
+            return (ITaskExecutor)Activator.CreateInstance(type);
+         }
     }
 }
